@@ -33,7 +33,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/mean/index.html'));
 });
 
-const port = process.env.PORT || 4200;
+const port = 80;
 app.set('port', port);
 
 const server = http.createServer(app);
